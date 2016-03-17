@@ -1,0 +1,101 @@
+/* Some CSS Styles - nothing to do with flexbox */
+ body {
+  box-sizing: border-box;
+  background: white;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.example1 {
+  border: 10px solid #afa6ca;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+.example1 li {
+  background-color: lightgoldenrodyellow;
+  list-style: none;
+  padding: 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.example1 li:hover {
+  background: goldenrod;
+}
+
+.example2 {
+  background: url(https://unsplash.it/800/600/?image=43);
+  height: 420px;
+  background-size: cover;
+}
+
+.example3 .card-item {
+  background: #fafafa;
+  border: 1px solid #CECDCD;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+ }
+
+/* Exercise 1: Create a horizontal navigation with all links at the top right of the page.
+Bonus: Change the order so Home is first and the only link left aligned.
+Code goes here: */
+
+.example1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home {
+  order: -1;
+  margin-right: auto;
+}
+
+
+/* Exercise 2: Center the headline horizontally and vertically in the hero image. 
+Bonus: Add a call-to-action button centered under the headline. 
+Code goes here: */
+
+ .example2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.example2 a{
+  display: block;
+}
+
+
+
+/* Exercise 3: Arrange the cards into a responsive grid with each card's content aligned in a column. 
+Code goes here: */
+
+.example3 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card-item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  flex: 1 0 250px;
+}
+
+ 
